@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My web page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="1.html"><li>home</li></a>
+                <a href="about.html"><li>about</li></a>
+                <a href="contact.html"><li>contact</li></a>
+                <a href="contact2.html"><li>contact2</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <p>all these are h tags used for different size of headigs that range fron 1 to 6</p>
+<br> 
+    <h1>hello </h1>
+ <h2>hello</h2>   
+ <h3>hello</h3>
+ <h4>hello</h4>
+ <h5>hello</h5>
+ <h6>hello</h6>
+ <br>
+
+ <div>
+     <p>the divs are just containter tags </p>
+     <i>hello</i><br>
+     <em>hello in emphysis form</em><br>
+     <strong>hello in strong font</strong><br>
+     <b>hello</b><br>
+     <p>thats html</p><br>
+ </div>
+
+ <a href="https://amazon.com">go shopping</a>
+ <p>the above link was created using tag a. href will have address. 
+     a content needs to be written in order to get the link(go shopping)</p>
+     <br>
+     <p>navigation tag (nav) is always inside a header tag. we have 2 types of list unordered (ul) and
+         ordered (ol). list items can be listed using li tag
+     </p>
+
+     
+     <br>
+
+    <p id="image">
+        img tag is used to insert an image. it is a self closing tag
+    </p>
+    <br>
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Parc_du_Mont-Bellevue.jpg/1200px-Parc_du_Mont-Bellevue.jpg"alt="landscape">
+    <img src="zodiac.jpg" alt="zodiac" class="circle" >
+    <br>
+    
+    <p>to change size of img use height in pixels</p>
+    <img src="zodiac.jpg" alt="zodiac" class="circle-img" height=300 width="300">
+    
+    <p>image can also be used as a link. click below to open google
+    </p>
+    
+    <a href="https://google.com">
+    <img src="https://cdn.wonderfulengineering.com/wp-content/uploads/2014/01/highway-wallpapers.jpeg"alt="lands" height = 200></a>
+<br><br>
+
+<p class="content">to add color or basically style the sheet we use css. create a new file abc.css, link the cc file in the main 
+    prog using link tag inside the head tag.
+</p>
+this is by targetting the element name. but it will change all the content under thr element. e.g if u change the colour of all the 
+content in h1. the the h1 colour will change not only for the line you want.
+in order to avoid this we need to target a class, i.e. we put a perticulat line with a perticular element under a class.
+to do this before > of any tag add class and give a name.
+but the same class name can be given for multiple elements.
+instead an id can be used to be more spchific. done using id in a similar way as of class.
+<br>
+<br>
+<p>
+    there are 3 types of borders the we can add to an element using border tag. solid dotted dashed
+we can adjust the size of the amout the space around the border using margin tag.
+the white space inside can be changed using padding tag.
+</p>
+
+<div class="flex">
+    <p>
+        flex boxes need a parent containet in order to work.the elements inside that container can be adjusted, centered and 
+        moved around easily. we use display - flex so that when screen size is reduced the boxes align themselves instead of getting
+        smaller in size. we use margin whiich puts a margin all around the parent container. justify content usde used to align the 
+        boxes. it can be center, flex start, flex end, space between or space around. flex direction can be used by using row, row 
+        reverse or column or column reverse. similarly align items can be usde alont=g with flex end, flex start, center, baseline, 
+        stretch.
+    </p>
+    <br>
+    <p>
+        animations
+        <br>
+        we can create animations for the boxes. in order to to that we need to clreat the animation. we use @keyframes to do so.
+        and then we give a name.
+        <br>
+        1. <b>fading - </b>we use opacity - value ranges between 0 and 1 where 0 means invisible and 1 means completely visible. there we use 
+        0% which means start of the animation and 100% means end of the animation. we assign this animation for the box by using its 
+        id. we use animation name, animation detation for how long it is suppose to run, animation iteration count for the no. of times
+        the animation has to run and animation timing function the defines the speed throughout the cycle. here we use linear so that
+        times remains same all throughout.
+        <br>
+        2. rotate - we use transform - roate and then give a degree. for a graidant backgroung colour we use backgroung image and then 
+        radial gradiant or linear gradiant. under this we say the shape say circle or linear may be.(comma next to this is very imp)
+        the then put in some colours.
+        <br>
+        3. bigger - we use transform - scale and give a value. 1 is initial.
+        <br>
+        4. colour - we use backgroung colour. we use forward so that the animation stops at the final colour or if we put infinite 
+        it keeps going on if not it comes back to default colour. 
+        <br>
+        5. move - to move wrt to the top left point we use top and left. 
+        <br>
+        position (a) relative - if we specify a position, box moves to that position within the container wrt its initial pos.
+        (b) absolute - it moves the the actual position on the screen(could be out of the container).
+        (c) fixed - it to it actual pos as in case of absolute but remains fixed and does not get away from screen.
+    </p>
+<div class="Box" id="Box1">box 1</div>
+<div class="Box" id="Box2">box 2</div>
+<div class="Box" id="Box3">box 3</div>
+<div class="Box" id="Box4">box 4</div>
+<div class="Box" id="Box5">box 5</div>
+<div class="Box" id="Box6">box 6</div>
+</div>
+<br>
+<p>
+    text can be aligned using text align.
+    <br>
+    while styling the nav bar, we can remove the underline for links using text decoration line for link tag. bulletins can be removed 
+    using list style. 
+    <br>
+    the changes done to the nav bar here will not be reflected on the 'about' page. so the style sheet link has to be added on the about page.
+</p>
+<p>
+    we can make an img in circle shape by using border radius in style sheet.
+    <br>
+    we can create shadows for the images using box shadow. first value represents the shadoe for the right side of the img. 2nd for 
+    the bottom, 3rd for the blurring, 4th for size of shadow(optional), 5ht for colour.
+    <br>
+    internal shadow can be created using inset.
+    <br>
+    shadows for texts can be created using text shadows.
+     
+</p>
+<br>
+<p>
+    to put background for the whole sheet we use background image and then write the address. we can also we linear or radial gradiant
+    for a gradiant background. while using linear gradiant we can specify the direction using 'to right', 'to bottom', etc.
+</p>
+<br>
+<p>
+    we can creat forms using form tag. we use required which ensures that the field does not go unfilled. placeholder 
+    displays what has to be displayed on screen about the field. we use input for all normal text inputs. we use textbox for a text box
+    and button for a button. 
+</p>
+<br>
+<br>
+<p>
+    to make things more better, we use materialise. go to the website to use. 
+    we can use various kinf of things there. first we use the nav bar. we just need to copy and paste the code. before that to get
+    access from the materialise page we need to copy 2 links that connects their inbuit code to out page. there links are in the home
+    page of the website under the heading CND. the first link is for css and is supposed to be pasted in the head to the code. the 
+    second link is a java script link and it would be the last line of out body tag.(so paster before the closing body tag). this 
+    is done so because we dont want any java codes in b/w and also it tends to make our page slower.
+    <br>
+    we use text inputs text spcaes. to activate icons we need to copy a link from icons page and paste it in our head tag. we use text 
+    area for messge box and button for a submit button. 
+</p>
+<br>
+<p>
+    to creat css grid we go to the website of grid by example. currently we choose the layering items format. we first copy the html 
+    code and then the css code. we can change the values of rows and clumns accordingly. z inder is used for layering. we define 
+    one value for z index in the css definition of box class. we again use z index for the box which we need to layer. here we have 
+    layered box f. the value of z index while for box f should be more than the actually defined value. it just could be anything.
+    <br>
+    so we put in images in each box give them a size in html and center them using css. for box c and box f we have given a background 
+    colour which just helps to show what exactly the z index does.   
+</p>
+</body>
+</html>

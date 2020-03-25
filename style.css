@@ -1,0 +1,238 @@
+h1{
+    color: blueviolet;
+    text-align: center;
+    text-shadow: 3px 2px 2px rgb(114, 102, 102);
+}
+h3{
+    color: crimson;
+}
+.content{
+    color: rgb(230, 26, 213);
+}
+#image {
+    color: firebrick;
+}
+.content{
+    border: 5px solid tomato;
+    margin-left: 25px;
+    padding-top: 35px;
+}
+#image{
+    border: 3px dotted indigo;
+    margin: 50px 25px;
+    padding: 20px 15px;
+}
+h5{
+    border: 10px dashed orangered;
+    margin: 10px 20px 30px 40px;
+    padding:10px 20px 30px 40px;
+}
+.Box {
+    background: plum;
+    height: 100px;
+    width: 200px;
+    margin: 20px 20px;
+    display: inline-block;
+}
+nav{
+    text-align: center;
+    background-color: yellowgreen;
+}
+a {
+    text-decoration-line: none;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    padding: 25px;
+}
+.circle-img {
+    border-radius: 30%;
+    box-shadow: 10px 10px 5px 10px forestgreen;
+}
+.circle {
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px darkorange;
+    inset: ;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    margin: 15px;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    padding-bottom: 3cm;
+}
+@keyframes fade
+{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#Box1 {
+    animation-name: fade;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate
+{
+    0%{transform: rotate(90deg);}
+    25%{transform: rotate(180deg);}
+    50%{transform: rotate(270deg);}
+    100%{transform: rotate(360deg);}
+}
+#Box2 {
+    animation-name: rotate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    background-image: radial-gradient(circle, green, rgb(28, 230, 28), rgb(13, 240, 13));
+}
+@keyframes bigger
+{
+    0%{transform: scale(1);}
+    50%{transform: scale(0.5);}
+    100%{transform: scale(2);}
+}
+#Box3{
+    animation: bigger ease-in 3s infinite alternate-reverse;
+    background-image: linear-gradient(yellow, red, rgb(199, 53, 53), orange);
+}
+@keyframes colour
+{
+    0%{background-color: blueviolet;}
+    25%{background-color: chartreuse;}
+    50%{background-color: crimson;}
+    75%{background-color: chocolate;}
+    100%{background-color: darkgoldenrod;}
+}
+#Box4{
+    animation: colour 3s forwards linear;
+}
+@keyframes movebox
+{
+    0%{left: 0px; top: 0px;}
+    25%{left: 100px; top: 0px;}
+    50%{left: 100px; top: 100px;}
+    75%{left: 0px; top: 100px;}
+    100%{left: 0px; top: 0px;}
+}
+#Box5 {
+    animation: movebox infinite 3s linear;
+    background-color: darkorange;
+    position: relative;
+}
+#Box6 {
+    top: 50px;
+    left: 50px;
+    position: relative;
+}
+html {
+    background-image: url(https://i.pinimg.com/originals/e2/71/fd/e271fda72f1e158b5f0569cc72d36d7f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+/*form input {
+    display: block;
+    margin: 30px;
+}
+form textarea {
+    display: block;
+    margin: 30px;
+}
+form button {
+    display: block;
+    margin: 30px;
+}
+*/
+form input, textarea, button {
+    display: block;
+    margin: 30px;  
+}
+
+.contact_box {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    margin: 30px;
+}
+
+.input-field {
+    margin: 20px;
+}
+
+.btn {
+    background-color: crimson;
+}
+
+.wrapper {
+    display: grid;
+grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 19% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: #fff;
+    color: #444;
+}
+
+.box {
+    background-color:#fff ;
+    color: #fff ;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+
+}
+
+.a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.b {
+    grid-column: col 4 / span  2 ;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.c {
+    grid-column: col / span 5;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: right;
+    background-image: linear-gradient(yellow,green,yellow,green);
+}
+.d {
+    grid-column: col 2 / span 1 ;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content: center;
+}
+
+.e {
+    grid-column: col 4/ span  1 ;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+}
+
+.f {
+    grid-column: col 2 / span 3;
+    grid-row: row 2  ;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(green,yellow,green,yellow);
+}
