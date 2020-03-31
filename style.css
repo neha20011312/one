@@ -45,8 +45,8 @@ nav ul{
     list-style: none;
 }
 nav li{
-    display: inline-block;
-    padding: 25px;
+    display: inline-block; 
+    padding: 15px;
 }
 .circle-img {
     border-radius: 30%;
